@@ -17,10 +17,10 @@ module.exports = {
         eqShad1: "hsl(6, 70%, 34%)",
         keyBg1: "hsl(30, 25%, 89%)",
         keyShad1: "hsl(28, 16%, 65%)",
-        topText1: "hsl(0, 0, 100%)",
+        topText1: "rgb(255,255,255)",
         keyText1: "hsl(221, 14%, 31%)",
-        delText1: "hsl(0, 0, 100%)",
-        eqText1: "hsl(0, 0, 100%)",
+        delText1: "rgb(255,255,255)",
+        eqText1: "rgb(255,255,255)",
 
         mainBg2: "hsl(0, 0%, 90%)",
         keypadBg2: "hsl(0, 5%, 81%)",
@@ -33,8 +33,8 @@ module.exports = {
         keyShad2: "hsl(35, 11%, 61%)",
         topText2: "hsl(60, 10%, 19%)",
         keyText2: "hsl(60, 10%, 19%)",
-        delText2: "hsl(0, 0, 100%)",
-        eqText2: "hsl(0, 0, 100%)",
+        delText2: "rgb(255,255,255)",
+        eqText2: "rgb(255,255,255)",
 
         mainBg3: "hsl(268, 75%, 9%)",
         keypadBg3: "hsl(268, 71%, 12%)",
@@ -47,7 +47,7 @@ module.exports = {
         keyShad3: "hsl(290, 70%, 36%)",
         topText3: "hsl(52, 100%, 62%)",
         keyText3: "hsl(52, 100%, 62%)",
-        delText3: "hsl(0, 0, 100%)",
+        delText3: "rgb(255,255,255)",
         eqText3: "hsl(198, 20%, 13%)"
       }
     }
