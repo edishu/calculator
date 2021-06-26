@@ -54,35 +54,35 @@ export default function Home() {
 
   return (
     <div
-      className={`flex flex-col items-center justify-center min-h-screen ${themes[theme].mainBg}`}
+      className={`min-h-screen px-8 sm:px-0 flex flex-col sm:items-center justify-center ${themes[theme].mainBg}`}
     >
       <Head>
         <title>Calculator App</title>
         <link rel="icon" href="/favicon-32x32.png" />
       </Head>
-      <div className="font-spartan w-1/3">
+      <div className="font-spartan sm:w-1/2 md:w-1/3">
         <section
           className={`flex justify-between items-end w-full ${themes[theme].topText} mb-8`}
         >
-          <h2 className="text-3xl">calc</h2>
+          <h2 className="text-xl sm:text-3xl">calc</h2>
           <div className="flex items-end">
-            <h3 className="mr-5 text-sm">THEME</h3>
+            <h3 className="mr-5 text-xs sm:text-sm">THEME</h3>
             <div className="grid grid-cols-3 grid-rows-2 gap-x-4 gap-y-1">
               <label
                 onClick={() => setTheme("1")}
-                className="col-start-1 col-end-2 row-start-1 row-end-2 m-auto pl-1 cursor-pointer"
+                className="col-start-1 col-end-2 row-start-1 row-end-2 m-auto pl-1 cursor-pointer text-xs sm:text-base"
               >
                 1
               </label>
               <div
                 onClick={() => setTheme("2")}
-                className="col-start-2 col-end-3 row-start-1 row-end-2 m-auto cursor-pointer"
+                className="col-start-2 col-end-3 row-start-1 row-end-2 m-auto cursor-pointer text-xs sm:text-base"
               >
                 2
               </div>
               <div
                 onClick={() => setTheme("3")}
-                className="col-start-3 col-end-4 row-start-1 row-end-2 m-auto pr-1 cursor-pointer"
+                className="col-start-3 col-end-4 row-start-1 row-end-2 m-auto pr-1 cursor-pointer text-xs sm:text-base"
               >
                 3
               </div>
