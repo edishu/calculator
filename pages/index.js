@@ -68,28 +68,46 @@ export default function Home() {
           <div className="flex items-end">
             <h3 className="mr-5 text-sm">THEME</h3>
             <div className="grid grid-cols-3 grid-rows-2 gap-x-4 gap-y-1">
-              <div className="col-start-1 col-end-2 row-start-1 row-end-2 m-auto pl-1">
+              <label
+                onClick={() => setTheme("1")}
+                className="col-start-1 col-end-2 row-start-1 row-end-2 m-auto pl-1 cursor-pointer"
+              >
                 1
-              </div>
-              <div className="col-start-2 col-end-3 row-start-1 row-end-2 m-auto">
+              </label>
+              <div
+                onClick={() => setTheme("2")}
+                className="col-start-2 col-end-3 row-start-1 row-end-2 m-auto cursor-pointer"
+              >
                 2
               </div>
-              <div className="col-start-3 col-end-4 row-start-1 row-end-2 m-auto pr-1">
+              <div
+                onClick={() => setTheme("3")}
+                className="col-start-3 col-end-4 row-start-1 row-end-2 m-auto pr-1 cursor-pointer"
+              >
                 3
               </div>
               <div className="col-start-1 col-end-2 row-start-2 row-end-3 z-10 m-auto  pl-1">
                 <div
-                  className={`${themes[theme].eqBg} h-4 w-4 rounded-full`}
+                  onClick={() => setTheme("1")}
+                  className={`${
+                    theme === "1" ? themes[theme].eqBg : ""
+                  } h-4 w-4 rounded-full cursor-pointer`}
                 ></div>
               </div>
               <div className="col-start-2 col-end-3 row-start-2 row-end-3 z-10 m-auto">
                 <div
-                  className={`${themes[theme].eqBg} h-4 w-4 rounded-full`}
+                  onClick={() => setTheme("2")}
+                  className={`${
+                    theme === "2" ? themes[theme].eqBg : ""
+                  } h-4 w-4 rounded-full cursor-pointer`}
                 ></div>
               </div>
               <div className="col-start-3 col-end-4 row-start-2 row-end-3 z-10 m-auto pr-1">
                 <div
-                  className={`${themes[theme].eqBg} h-4 w-4 rounded-full`}
+                  onClick={() => setTheme("3")}
+                  className={`${
+                    theme === "3" ? themes[theme].eqBg : ""
+                  } h-4 w-4 rounded-full cursor-pointer`}
                 ></div>
               </div>
               <div
